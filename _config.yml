@@ -1,22 +1,16 @@
-# the language
 lang: en
-# author info
 author:
   name: bullgit
   email: haroen@bullg.it
   twitter: '@bullgit'
-# title and description
 title: Fast Clock
 description: A super fast clock continously deployed
-# the url this will be published at
 url: https://bullg.it
 baseurl: /fast-clock
-# the theme colour
 color: '#FFFFFF'
-# location of some files
 css: ['/src/style.css']
 # scripts: ['src/main.js']
 favicon: /media/pixels/favicon.png
-#configuration
 sass:
   style: compressed
+time: 2016-04-26T08:16:45.522Z

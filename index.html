@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="grow">
-  <time datetime="2016-04-26T08:16:45.522Z">26 April 2016 at 10:16:45 GMT+2</time>
+  <time datetime="{{site.time | date_to_xmlschema}}">{{site.time | date_to_rfc822}}</time>
 </div>
 <footer>
   <p>A very fast clock by <a href="https://bullg.it">bullgit</a></p>
