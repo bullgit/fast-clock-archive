@@ -1,26 +1,22 @@
 # the language
-lang:
+lang: en
 # author info
 author:
-  name:
-  email:
-  twitter:
+  name: bullgit
+  email: haroen@bullg.it
+  twitter: '@bullgit'
 # title and description
-title:
-description:
+title: Fast Clock
+description: A super fast clock continously deployed
 # the url this will be published at
-url:
-baseurl:
+url: https://bullg.it
+baseurl: /fast-clock
 # the theme colour
-color:
+color: '#FFFFFF'
 # location of some files
-css:
-scripts:
-favicon:
-# alternative to JEKYLL_ENV
-development: true
-# google analytics
-analytics:
+css: ['/src/style.css']
+# scripts: ['src/main.js']
+favicon: /media/pixels/favicon.png
 #configuration
 sass:
   style: compressed
