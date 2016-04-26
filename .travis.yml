@@ -14,4 +14,4 @@ after_success:
   - git config user.email "felixdemontis+flipitty-tribidy-swag@gmail.com"
   - git diff
   - git commit -am "HELLO I AM HERE TO TELL YOU THE TIME"
-  - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} > /dev/null 2>&1
+  - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME}
