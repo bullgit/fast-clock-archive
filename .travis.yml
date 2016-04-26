@@ -8,7 +8,7 @@ env:
         - GH_OWNER=punchtime
         - GH_PROJECT_NAME=web
 script:
-  - sed -i '$s/.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml
+  - "sed -i '$s/.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml"
 after_success:
   - git config user.name "flipitty-tribidy-swag"
   - git status
