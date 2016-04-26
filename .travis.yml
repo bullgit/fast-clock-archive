@@ -11,5 +11,5 @@ script:
   - "sed -i '$s/.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml"
 after_success:
   - git config user.name "flipitty-tribidy-swag"
-  - git status
-  - git diff
+  - git commit -am "HELLO I AM HERE TO TELL YOU THE TIME"
+  - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} > /dev/null 2>&1
