@@ -1,5 +1,7 @@
 # Fast Clock
 
+[![Build Status](https://travis-ci.org/bullgit/fast-clock.svg?branch=gh-pages)](https://travis-ci.org/bullgit/fast-clock)
+
 This is a very fast clock by bullgit. It works in the following way:
 
 1. The very first commit is made

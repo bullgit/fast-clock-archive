@@ -1,0 +1,14 @@
+language: shell
+branches:
+    only:
+        - gh-pages
+env:
+    global:
+        - GH_OWNER=punchtime
+        - GH_PROJECT_NAME=web
+script:
+  - date +%Y-%m-%dT%H:%M:%S%z
+after_success:
+  - git config user.name "flipitty-tribidy-swag"
+  - git status
+  - git diff
