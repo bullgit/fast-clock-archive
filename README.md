@@ -10,6 +10,14 @@ This is a very fast clock by bullgit. It works in the following way:
 4. A new build is triggered
 5. ...
 
+# Is this smart?
+
+No.
+
+# Does it still tick?
+
+Maybe.
+
 # License
 
 WTFPL
