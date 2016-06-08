@@ -14,10 +14,6 @@ This is a very fast clock by bullgit. It works in the following way:
 
 No.
 
-# Does it still tick?
-
-Maybe.
-
 # License
 
 WTFPL
