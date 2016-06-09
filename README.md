@@ -14,6 +14,10 @@ This is a very fast clock by bullgit. It works in the following way:
 
 No.
 
+# What if it isn't ticking?
+
+Travis has probably stopped building, that rascal. Give him a kick in the butt with a new manual commit.
+
 # License
 
 WTFPL
