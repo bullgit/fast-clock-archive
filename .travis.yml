@@ -8,7 +8,8 @@ env:
         - GH_OWNER=bullgit
         - GH_PROJECT_NAME=fast-clock
 script:
-  - "sed -i '$s/.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml"
+  - "sed -i 's/commits:.*/commits: '$TRAVIS_BUILD_NUMBER'/' _config.yml"
+  - "sed -i 's/time:.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml"
 after_success:
   - git config --global push.default simple
   - git config user.name "flipitty-tribidy-swag"
