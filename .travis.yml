@@ -7,8 +7,6 @@ git:
 env:
     global:
         - secure: "IlyxHYWefJ4rdKBGLQpst4eBTAyvF3EcTU85pmxkupKBxLdPqg8usKHcgfzuuRImMWmK9wpgYGXR8y8Tk/ZHxSjudC0w1qQA+lQvZBetcCCd1rZaUKI8Qw8kCNuI8rKfi0PjIiCYiAK7NjO+YTWjT55cAY0l90yIlSeER9WGBHUTu/WDH6VRWbHQJkUFDSskzaek9W4VzthBdlktDKQYJTMyRxEQz9CeJBoYqdMysYeM9AY0qX4nqfFu8pLWoToeBGHJ4h6P2gxHKgKA+Z3z0/T+9yOadvVGxLPo7Is9PL+ss2Q1TZn2X9fUciZ8k/5C8qC2akMnvXMwip7zKEda1rXgj7Ot/gkX8O2AIWokCpV7pD3tZGVoLP37w1C8N3oKzA+EMvn837LsozpJR064bhXLIFdiMVATMb3f6BkPMi7XksTU6dGYZ+sFmiIEKx6e7AiSFALEzx0MNtWmAxJhPSK6c/9toZTtWMUVU09O19eArFi44ERdbQ0mDhd92iMcOuYAFS4UNnWnndAkwdda3cSxhSZZN1mOpdylhihJorY/4eDw/1fPcREDy8pzF7XogHcC/kMDptCflgsXR3sW97G2ykdfQxAQXVZWXnO6EssMZSClKfLBY8FCZgXQQ4Asl20JMGWVhOoRJYaIXWNYwsCNJFhA6dXz46pYC1awjYg="
-        - GH_OWNER=bullgit
-        - GH_PROJECT_NAME=fast-clock
 script:
   - "sed -i 's/commits:.*/commits: '$TRAVIS_BUILD_NUMBER'/' _config.yml"
   - "sed -i 's/time:.*/time: '$(date +%Y-%m-%dT%H:%M:%S%z)'/' _config.yml"
@@ -17,4 +15,4 @@ after_success:
   - git config user.name "flipitty-tribidy-swag"
   - git config user.email "felixdemontis+flipitty-tribidy-swag@gmail.com"
   - git commit -am "HELLO I AM HERE TO TELL YOU THE TIME"
-  - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
+  - git push https://${GH_OAUTH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} HEAD:gh-pages > /dev/null 2>&1
