@@ -1,4 +1,5 @@
 language: shell
+sudo: false
 branches:
     only:
         - gh-pages
