@@ -6,7 +6,7 @@ author:
 title: Fast Clock
 description: A super fast clock continously deployed
 url: https://bullg.it
-baseurl: /fast-clock
+baseurl: /fast-clock-archive
 color: '#FFFFFF'
 css: ['/src/style.css']
 # scripts: ['src/main.js']
